@@ -1,0 +1,82 @@
+.button {
+    height: 40px;
+    width: 125px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#proform{
+    background-color: rgba(164, 238, 234, 0.1);
+    display: inline-block;
+    width: 500px;
+    margin-left: 34%;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 1%;
+    
+}
+#proform input[type="text"], #proform input[type="email"],#proform input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align:start;
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+    text-align: center;
+    padding: 50px;
+    height: 500px;
+}
+
+span {
+    font-size: 15px;
+    font-weight: 300;
+ }
+
+ #logOut,#viewMyToDo, #createMyToDo{
+    float: right;
+    background-color: maroon;
+    border-collapse: collapse;
+    color: mintcream;
+ }
+
+.formElem {
+    height: 34px;
+}
+
+#address {
+    width: 500px
+}
+
+#profilePicture {
+    margin-left: 62px;
+    display: none;
+}
+
+#image,#save  {
+    display: none
+}
+
+li{
+    list-style-type:none;
+    display:inline;
+  }
+  body{
+      background-image: url("images/img.jpg");
+      background-size: cover;
+  }
+  #edit,#save{
+      background-color: maroon;
+      color: mintcream;
+  }
+  h1{
+      color:rgb(160, 54, 16);
+  }
+  #fname,#lname,#email,#password,#male,#female,#address{
+      color: black;
+      font-weight: 800;
+  }

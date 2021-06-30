@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+    <script src="register.js"></script>
+</head>
+
+<body onload="viewProfile()">
+    <header>
+        <input type="button" value='Log Out' id="logOut" onclick="logOut()" class="button" />
+        <input type="button" value='View To Do' id="viewMyToDo" onclick="location.assign('viewTodo.html')" class="button" />
+        <input type="button" value='Create To Do' id="createMyToDo" onclick="location.assign('addTodo.html')" class="button" />
+    </header>
+
+    <main>
+        <div class="loginform">
+            <form id="proform">
+                <h1>Your Profile</h1>
+                <img id="previewProfilePic" src="" alt="Profile Pic" height="100" width="100">
+                <br><br>
+
+                <span id="labels">First name: </span><input type="text" id="fname" disabled='true' class="formElem" />
+                <span id="labels">Last name: </span><input type="text" id="lname" disabled='true' class="formElem" />
+
+                <span id="labels">Email: </span> <input type="email" id="email" disabled='true' class="formElem" />
+
+                <span id="labels">Password: </span> <input type="password" id="password" disabled='true' class="formElem" />
+
+                <span id="labels">Gender:</span>
+                <ul>
+                    <li><span>Male</span><input type="radio" name="gender" value="male" id="male" disabled='true' /></li>
+                   <li><span>Female</span><input type="radio" name="gender" value="female" id="female" disabled='true' /></li> 
+                </ul><br>
+
+                <span id="profilePicture">Profile Picture: </span><input type="file" id="image" accept="image/*" onchange="changeProfilePic()" />
+                <br><br>
+                
+                <span>Address: </span><input type="text" id="address" disabled='true' class="formElem" />
+                <br><br>
+
+                <input type="button" value='Edit' id="edit" onclick="editUserData()" class="button" />
+                <input type="button" value='Save' id="save" onclick="updateUserData()" class="button" />
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

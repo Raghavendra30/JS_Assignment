@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+
+<body onload="registerSuccess()">
+  <main>
+        
+        <div class="loginform">
+            <form>
+                <span id="displayregisterSuccess" style="display: none">Registered Successfully!</span>
+                <br><br>
+                <h1>Log In</h1>
+                <input type="email" id="email" placeholder="E-mail" class="formElem" />
+                <input type="password" id="password" placeholder="Password" class="formElem" />
+                <div class="errorMsg" id="errorMsgText"></div> <br>
+                <input type="button" value="Login" onclick="login(event)" class="button" />
+                <br><br>
+                <a href="register.html" class="registrationLink">Not Registered? Sign Up</a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

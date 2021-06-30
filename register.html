@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Welcome to ToDo App !!</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+</head>
+
+<body onload="validate()">
+    <main>
+        <div class="loginform">
+            <form id="regform">
+                <h1>Register Yourself !!</h1>
+            
+                <input type="text" id="fname" placeholder="First name" class="formElem" /> 
+                <input type="text" id="lname" placeholder="Last name" class="formElem" />
+                <input type="email" id="email" placeholder="E-mail" class="formElem" />
+                <input type="password" id="password" class="formElem" placeholder="Password" />
+                <input type="text" id="address" class="formElem" placeholder="Address" />
+                <br>
+                <div class="errorMsg" id="errorMsgText"></div><br>
+                <span>Gender:</span>
+                <ul>
+                    <li>
+                        <input type="radio" name="gender" value="male" />
+                        <span style="font-weight: 500">Male </span></li>
+                    <li>
+                        <input type="radio" name="gender" value="female" />
+                        <span style="font-weight: 500">Female </span></li>
+                        <span id="genderEmpty">*Please select gender!</span>
+                </ul><br>
+
+                <span>Profile Picture: </span>
+                <input type="file" id="image" accept="image/*" onchange="changeProfilePic()" />
+
+                 <img id="previewProfilePic" src="images/pp.jpg" alt="Profile Pic" height="100" width="100">
+                <br>
+
+                <input type="button" value="Register" onclick="register()" class="button" /><br>
+                <a href="login.html" class="loginLink">Already Registered? Log In</a>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+#filterHeading {
+    float: left;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.loginform {
+    background-color: rgba(152, 235, 235, 0.2);
+    display: inline-block;
+    margin-left: 31%;
+    margin-top: 8%;
+    border-radius: 10px;
+    width: 700px;
+
+}
+
+
+#toDoTableHead {
+    background-color: rgba(152, 235, 235, 0.2);
+    display: inline-block;
+    margin-left: 31%;
+    margin-top: 1%;
+    border-radius: 4px;
+    width: 710px
+}
+#displayToDoItems{
+    width: 710px;
+    margin-left: 31%;
+}
+
+#form {
+    text-align: center;
+    padding: 14px;
+    height: auto;
+}
+
+.button {
+    height: 40px;
+    width: 125px;
+}
+
+#filters {
+    margin-left: -66px;
+}
+
+.toDoTableTitle {
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.errorMsg {
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 5px;
+}
+#save,
+#startDateForFilter,
+#dueDateForFilter,
+#searchForDateFilter {
+    display: none
+}
+
+#viewMyToDo,#logOut,#viewProfilePage,#createMyToDo{
+    float: right;
+    background-color: maroon;
+    border-collapse: collapse;
+    color: mintcream;
+}
+body{
+    background-image: url("images/img.jpg");
+    background-size: cover;
+}
+h2{
+    text-align: center;
+    background-color: steelblue;
+    padding-bottom: 1%;
+    font-weight: 800;
+    color:tomato;
+    text-shadow: snow 5px;
+   
+    margin-top: 10px;
+}
+#create,#edit,#save,#done,#delete{
+    background-color: rgb(204, 89, 89);
+    color: mintcream;
+}

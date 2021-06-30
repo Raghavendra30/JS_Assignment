@@ -1,0 +1,71 @@
+
+.loginform {
+    background-color: rgba(225, 225, 225, 0.5);
+    display: inline-block;
+    margin-left: 31%;
+    margin-top: 8%;
+    border-radius: 10px;
+    width: 700px;
+
+}
+
+#form {
+    text-align: center;
+    padding: 14px;
+    height: auto;
+}
+
+.button {
+    height: 40px;
+    width: 125px;
+}
+
+.createToDo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.errorMsg {
+    color: red;
+    margin-left: 10%;
+    margin-top: 4%;
+    width: 600px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+#title, #description {
+    width: 300px;
+}
+
+#startDate,#endDate,#reminderDate {
+    width: 150px;
+}
+
+#viewMyToDo,#logOut,#viewProfilePage{
+    float: right;
+    background-color: maroon;
+    border-collapse: collapse;
+    color: mintcream;
+}
+body{
+    background-image: url("images/img.jpg");
+    background-size: cover;
+}
+h2{
+    text-align: center;
+    background-color: steelblue;
+    padding-bottom: 1%;
+    font-weight: 800;
+    color:tomato;
+    text-shadow: snow 5px;
+   
+    margin-top: 10px;
+}
+#submit{
+    background-color: maroon;
+    color: mintcream;
+    margin-left: 30px;
+}

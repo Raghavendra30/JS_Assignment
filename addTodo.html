@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to list</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js"></script>
+</head>
+<body>
+    <header>
+        <input type="button" value='Log Out' id="logOut" onclick="logOut()" class="button" />
+        <input type="button" value='View To Do' id="viewMyToDo" onclick="location.assign('viewTodo.html')" class="button" />
+        <input type="button" value='My Profile' id="viewProfilePage" onclick="location.assign('profile.html')" class="button" />
+    </header>
+
+    <main>
+        <div class="loginform">
+            <div id="form">
+                <h2>Create To Do Item.</h2>
+                <span class="createToDo">Title:</span> <input type="text" id="title" class="formElem">
+                <br><br>
+                <span class="createToDo" style="margin-left:-58px ;">Description:</span> <input type="text" id="description" class="formElement">
+                <br><br>
+                <span class="createToDo">Start Date:</span> <input type="date" id="startDate" class="">
+                <br><br>
+                <span class="createToDo">Due Date:</span> <input type="date" id="endDate" class="formElem">
+                <br><br>
+                <span class="createToDo" style="margin-left:-40px ;">Reminder Date:</span> <input type="date" id="reminderDate" class="formElement">
+                <br><br>
+                <span class="createToDo" style="margin-left:-50px ;">Category:</span> &nbsp;&nbsp;
+                <select id="toDoCategory" class="formElem">
+                    <option value="work">Work</option>
+                    <option value="home">Home</option>
+                    <option value="personal">Personal</option>
+                </select>
+                <br>
+                <div class="errorMsg"><span id="errorMsgText"></span></div><br>
+                <input type="button" value="Create" id="submit" onclick="saveToDo()" class="button">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

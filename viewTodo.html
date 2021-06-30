@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Todo</title>
+    <link rel="stylesheet" href="viewTodo.css">
+    <script src="todo.js"></script>
+</head>
+
+<body onload="fetchUserEmail()">
+    <header>
+        <input type="button" value='Log Out' id="logOut" onclick="logOut()" class="button" />
+        <input type="button" value='Create To Do' id="createMyToDo" onclick="location.assign('addTodo.html')" class="button" />
+        <input type="button" value='My Profile' id="viewProfilePage" onclick="location.assign('profile.html')" class="button" />
+    </header>
+
+    <main>
+        <div class="loginform">
+            <div id="form">
+                <input type="button" value="Create" class="button" id="create" onclick="location.assign('addTodo.html')"> &nbsp;&nbsp;
+                <input type="button" value='Edit' onclick="editToDo()" id="edit" class="button" /> &nbsp;&nbsp;
+                <input type="button" value='Save' id="save" onclick="updateToDo()" class="button" /> &nbsp;&nbsp;
+                <input type="button" value='Mark Done' onclick="markAsDone()" id="done" class="button" /> &nbsp;&nbsp;
+                <input type="button" value='Delete' onclick="deleteToDo()" id="delete" class="button" />
+            </div>
+        </div>
+
+        <div class="loginform" style="margin-top: 5px">
+            <div id="form">
+                <span id="filterHeading">Filter:</span>
+                <select id="filters" onchange="applyFilter()" class="button">
+                    <option value="">--</option>
+                    <option value="dateRangeFilter">Date Range</option>
+                    <option value="doneFilter">Done</option>
+                    <option value="pendingFilter">Pending</option>
+                    <option value="removeFilter">Remove Filter</option>
+                </select>
+                <input type="date" id="startDateForFilter" class="button"> 
+                <input type="date" id="dueDateForFilter" class="button">
+                <input type="button" id="searchForDateFilter" value="Search" onclick="dateFilter()" class="button">
+            </div>
+        </div><br>
+        <div class="errorMsg"><span id="errorMsgText"></span></div><br>
+
+        <div id="toDoTableHead">
+            <br>
+            <span class="toDoTableTitle">Title</span>
+            <span class="toDoTableTitle">Description</span>
+            <span class="toDoTableTitle">Start</span>
+            <span class="toDoTableTitle">Due</span>
+            <span class="toDoTableTitle">Reminder</span>
+            <span class="toDoTableTitle">Status</span>
+            <span class="toDoTableTitle">Category</span>
+            <br>
+        </div><br><br>
+        <div id="displayToDoItems"></div>
+    </main>
+</body>
+
+</html>

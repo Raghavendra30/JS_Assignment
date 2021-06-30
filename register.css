@@ -1,0 +1,98 @@
+.loginform {
+    background-color:rgb(200, 200, 200, 0.1);
+    display: inline-block;
+    margin-left: 30%;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+input{
+    display: block;
+    text-align: center;
+
+}
+#regform input[type="text"],#regform input[type="email"],#regform input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 1;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#regform input[type="radio"] {
+    display: inline;
+    margin-top: 10px;
+   
+}
+li{
+    list-style-type:none;
+    display:inline;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+form {
+    padding: 50px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#regform input[type="file"] {
+    margin-left: 150px;
+    margin-right: auto;
+}
+
+.button {
+    height: 40px;
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkgreen;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#genderEmpty {
+    display: none;
+    color: #f4511e;
+   
+}
+
+.errorMsg {
+    
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 7px;
+}
+.loginLink {
+    
+    color: black;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.loginLink:hover {
+    color:salmon;
+}
+h1{
+    text-align: center;
+    color: darkslateblue;
+    margin-bottom: 10%;
+}
+#previewProfilePic{
+   float: right;
+}
+body{
+    background-image: url("images/img3.png");
+    background-size:cover ;
+}
