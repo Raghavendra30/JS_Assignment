@@ -93,6 +93,6 @@ h1{
    float: right;
 }
 body{
-    background-image: url("images/img3.png");
+    background-image: url("../images/img3.png");
     background-size:cover ;
 }

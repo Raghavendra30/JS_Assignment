@@ -4,7 +4,7 @@ function viewProfile() {
 
     (function() {
         if (email == null)
-            location.assign('login.html');
+            location.assign('../html/login.html');
     })();
 
     if ((JSON.parse(localStorage.getItem('users')))[ivalue].email === email) {
@@ -42,6 +42,6 @@ function editUserData() {
 
 function logOut() {
 
-    location.assign('login.html');
+    location.assign('../html/login.html');
     sessionStorage.clear();
 }

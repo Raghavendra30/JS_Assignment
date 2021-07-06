@@ -2,7 +2,7 @@ var email = sessionStorage.getItem('email');
 
 (function() {
     if (email == null)
-        location.assign('login.html');
+        location.assign('../html/login.html');
 })();
 
 var userDataArray = JSON.parse(localStorage.getItem('todo')) || [];
@@ -127,7 +127,7 @@ function storeToDo(email, title, description, startDate, endDate, reminderDate, 
     userDataArray.push(userDataObject);
     localStorage.setItem('todo', JSON.stringify(userDataArray));
 
-    location.assign('viewTodo.html');
+    location.assign('../html/viewTodo.html');
 }
 
 function fetchUserEmail() {
@@ -325,7 +325,7 @@ function markAsDone() {
             userDataArray[i].status = 'Done';
             localStorage.setItem('todo', JSON.stringify(userDataArray));
             temp++;
-            location.assign('viewTodo.html');
+            location.assign('../html/viewTodo.html');
         }
     }
 
@@ -343,7 +343,7 @@ function deleteToDo() {
             localStorage.setItem('todo', JSON.stringify(userDataArray));
             temp++;
             document.getElementById('errorMsgText').innerHTML = '';
-            location.assign('viewTodo.html');
+            location.assign('../html/viewTodo.html');
         }
     }
 
@@ -450,7 +450,7 @@ function applyFilter() {
     }
 
     if (filter == 'removeFilter') {
-        location.assign('viewTodo.html');
+        location.assign('../html/viewTodo.html');
     }
 
 }
@@ -496,6 +496,6 @@ function dateFilter() {
 }
 
 function logOut() {
-    location.assign('login.html');
+    location.assign('../html/login.html');
     sessionStorage.clear();
 }

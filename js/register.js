@@ -2,7 +2,7 @@ function validtae() {
     let email = sessionStorage.getItem('email');
 
     if (email != null)
-        location.assign('todo.html');
+        location.assign('../html/todo.html');
 };
 
 function register(event) {
@@ -173,7 +173,7 @@ function storeUserData(image, email, fname, lname, address, password, gender) {
     localStorage.setItem('users', JSON.stringify(userDataArray));
 
     sessionStorage.setItem('registered', 1);
-    location.assign('login.html');
+    location.assign('../html/login.html');
 }
 
 function updateUserData() {

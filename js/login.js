@@ -4,7 +4,7 @@ let temp = 0;
     let email = sessionStorage.getItem('email');
 
     if (email != null)
-        location.assign('todo.html');
+        location.assign('../html/todo.html');
 })();
 
 function login(event) {
@@ -57,7 +57,7 @@ function emailValidation(email, password) {
     } else if (password === userDataArray[ivalue].password) {
         sessionStorage.setItem('email', email);
         sessionStorage.setItem('ivalue', i);
-        location.assign('profile.html');
+        location.assign('../html/profile.html');
     } else {
         document.getElementById('errorMsgText').innerHTML = 'Wrong password! Try again';
     }

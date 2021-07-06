@@ -66,7 +66,7 @@ li{
     display:inline;
   }
   body{
-      background-image: url("images/img.jpg");
+      background-image: url("../images/img.jpg");
       background-size: cover;
   }
   #edit,#save{
